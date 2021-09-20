@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.BackBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -36,26 +36,26 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.btnsubmit = new System.Windows.Forms.Button();
+            this.PaidcomboBox = new System.Windows.Forms.ComboBox();
+            this.datetexbox = new System.Windows.Forms.TextBox();
+            this.ENametextBox = new System.Windows.Forms.TextBox();
+            this.TCtextBox = new System.Windows.Forms.TextBox();
+            this.LCtextBox = new System.Windows.Forms.TextBox();
+            this.ICtextBox5 = new System.Windows.Forms.TextBox();
+            this.BtnSubmit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // BackBtn
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button1.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(12, 386);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "BACK";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BackBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BackBtn.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackBtn.Location = new System.Drawing.Point(12, 386);
+            this.BackBtn.Name = "BackBtn";
+            this.BackBtn.Size = new System.Drawing.Size(75, 23);
+            this.BackBtn.TabIndex = 2;
+            this.BackBtn.Text = "BACK";
+            this.BackBtn.UseVisualStyleBackColor = true;
+            this.BackBtn.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -133,82 +133,83 @@
             this.label7.TabIndex = 8;
             this.label7.Text = "Paid :";
             // 
-            // comboBox1
+            // PaidcomboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.PaidcomboBox.FormattingEnabled = true;
+            this.PaidcomboBox.Items.AddRange(new object[] {
             "Paid",
             "Unpaid"});
-            this.comboBox1.Location = new System.Drawing.Point(253, 271);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 9;
+            this.PaidcomboBox.Location = new System.Drawing.Point(253, 271);
+            this.PaidcomboBox.Name = "PaidcomboBox";
+            this.PaidcomboBox.Size = new System.Drawing.Size(121, 21);
+            this.PaidcomboBox.TabIndex = 9;
             // 
-            // textBox1
+            // datetexbox
             // 
-            this.textBox1.Location = new System.Drawing.Point(253, 93);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 20);
-            this.textBox1.TabIndex = 10;
+            this.datetexbox.Location = new System.Drawing.Point(253, 93);
+            this.datetexbox.Name = "datetexbox";
+            this.datetexbox.Size = new System.Drawing.Size(121, 20);
+            this.datetexbox.TabIndex = 10;
             // 
-            // textBox2
+            // ENametextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(253, 129);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(121, 20);
-            this.textBox2.TabIndex = 11;
+            this.ENametextBox.Location = new System.Drawing.Point(253, 129);
+            this.ENametextBox.Name = "ENametextBox";
+            this.ENametextBox.Size = new System.Drawing.Size(121, 20);
+            this.ENametextBox.TabIndex = 11;
             // 
-            // textBox3
+            // TCtextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(253, 166);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(121, 20);
-            this.textBox3.TabIndex = 12;
+            this.TCtextBox.Location = new System.Drawing.Point(253, 166);
+            this.TCtextBox.Name = "TCtextBox";
+            this.TCtextBox.Size = new System.Drawing.Size(121, 20);
+            this.TCtextBox.TabIndex = 12;
             // 
-            // textBox4
+            // LCtextBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(253, 200);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(121, 20);
-            this.textBox4.TabIndex = 13;
+            this.LCtextBox.Location = new System.Drawing.Point(253, 200);
+            this.LCtextBox.Name = "LCtextBox";
+            this.LCtextBox.Size = new System.Drawing.Size(121, 20);
+            this.LCtextBox.TabIndex = 13;
             // 
-            // textBox5
+            // ICtextBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(253, 234);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(121, 20);
-            this.textBox5.TabIndex = 14;
+            this.ICtextBox5.Location = new System.Drawing.Point(253, 234);
+            this.ICtextBox5.Name = "ICtextBox5";
+            this.ICtextBox5.Size = new System.Drawing.Size(121, 20);
+            this.ICtextBox5.TabIndex = 14;
             // 
-            // btnsubmit
+            // BtnSubmit
             // 
-            this.btnsubmit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnsubmit.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsubmit.Location = new System.Drawing.Point(363, 386);
-            this.btnsubmit.Name = "btnsubmit";
-            this.btnsubmit.Size = new System.Drawing.Size(75, 23);
-            this.btnsubmit.TabIndex = 15;
-            this.btnsubmit.Text = "Submit";
-            this.btnsubmit.UseVisualStyleBackColor = true;
+            this.BtnSubmit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.BtnSubmit.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSubmit.Location = new System.Drawing.Point(363, 386);
+            this.BtnSubmit.Name = "BtnSubmit";
+            this.BtnSubmit.Size = new System.Drawing.Size(75, 23);
+            this.BtnSubmit.TabIndex = 15;
+            this.BtnSubmit.Text = "Submit";
+            this.BtnSubmit.UseVisualStyleBackColor = true;
+            this.BtnSubmit.Click += new System.EventHandler(this.BtnSubmit_Click);
             // 
             // TADA_Entry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(702, 421);
-            this.Controls.Add(this.btnsubmit);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.BtnSubmit);
+            this.Controls.Add(this.ICtextBox5);
+            this.Controls.Add(this.LCtextBox);
+            this.Controls.Add(this.TCtextBox);
+            this.Controls.Add(this.ENametextBox);
+            this.Controls.Add(this.datetexbox);
+            this.Controls.Add(this.PaidcomboBox);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BackBtn);
             this.Controls.Add(this.label1);
             this.Name = "TADA_Entry";
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
@@ -220,7 +221,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BackBtn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -228,12 +229,12 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button btnsubmit;
+        private System.Windows.Forms.ComboBox PaidcomboBox;
+        private System.Windows.Forms.TextBox datetexbox;
+        private System.Windows.Forms.TextBox ENametextBox;
+        private System.Windows.Forms.TextBox TCtextBox;
+        private System.Windows.Forms.TextBox LCtextBox;
+        private System.Windows.Forms.TextBox ICtextBox5;
+        private System.Windows.Forms.Button BtnSubmit;
     }
 }

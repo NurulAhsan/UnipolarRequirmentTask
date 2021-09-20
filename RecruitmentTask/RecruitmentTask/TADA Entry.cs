@@ -24,7 +24,9 @@ namespace RecruitmentTask
             this.Hide();
         }
 
-       
-       
+        private void BtnSubmit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
