@@ -41,7 +41,7 @@
             this.ENametextBox = new System.Windows.Forms.TextBox();
             this.TCtextBox = new System.Windows.Forms.TextBox();
             this.LCtextBox = new System.Windows.Forms.TextBox();
-            this.ICtextBox5 = new System.Windows.Forms.TextBox();
+            this.ICtextBox = new System.Windows.Forms.TextBox();
             this.BtnSubmit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -172,12 +172,12 @@
             this.LCtextBox.Size = new System.Drawing.Size(121, 20);
             this.LCtextBox.TabIndex = 13;
             // 
-            // ICtextBox5
+            // ICtextBox
             // 
-            this.ICtextBox5.Location = new System.Drawing.Point(253, 234);
-            this.ICtextBox5.Name = "ICtextBox5";
-            this.ICtextBox5.Size = new System.Drawing.Size(121, 20);
-            this.ICtextBox5.TabIndex = 14;
+            this.ICtextBox.Location = new System.Drawing.Point(253, 234);
+            this.ICtextBox.Name = "ICtextBox";
+            this.ICtextBox.Size = new System.Drawing.Size(121, 20);
+            this.ICtextBox.TabIndex = 14;
             // 
             // BtnSubmit
             // 
@@ -197,7 +197,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(702, 421);
             this.Controls.Add(this.BtnSubmit);
-            this.Controls.Add(this.ICtextBox5);
+            this.Controls.Add(this.ICtextBox);
             this.Controls.Add(this.LCtextBox);
             this.Controls.Add(this.TCtextBox);
             this.Controls.Add(this.ENametextBox);
@@ -234,7 +234,7 @@
         private System.Windows.Forms.TextBox ENametextBox;
         private System.Windows.Forms.TextBox TCtextBox;
         private System.Windows.Forms.TextBox LCtextBox;
-        private System.Windows.Forms.TextBox ICtextBox5;
+        private System.Windows.Forms.TextBox ICtextBox;
         private System.Windows.Forms.Button BtnSubmit;
     }
 }

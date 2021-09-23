@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RecruitmentTask.TADAClass;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +17,7 @@ namespace RecruitmentTask
         {
             InitializeComponent();
         }
+        tadaclass c = new tadaclass();
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -26,6 +28,11 @@ namespace RecruitmentTask
 
         private void BtnSubmit_Click(object sender, EventArgs e)
         {
+            c.Date = datetexbox.Text;
+            c.EmployeeName = ENametextBox.Text;
+            //c.TravelCost = TCtextBox.ToString;
+            //c.LunchCost = LCtextBox.Text;
+            //c.InstrumentCost = ICtextBox.Text; 
 
         }
     }
