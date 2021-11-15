@@ -13,10 +13,10 @@ namespace RecruitmentTask.TADAClass
     {
         public string Date { get; set; }
         public string EmployeeName { get; set; }
-        public int TravelCost{ get; set; }
-        public int LunchCost { get; set; }
-        public int InstrumentCost { get; set; }
-        public int TotalCost { get; set; }
+        public string TravelCost{ get; set; }
+        public string LunchCost { get; set; }
+        public string InstrumentCost { get; set; }
+        public string TotalCost { get; set; }
         public string Paid { get; set; }
 
         static string myconnection = ConfigurationManager.ConnectionStrings["connstring"].ConnectionString;
@@ -25,10 +25,10 @@ namespace RecruitmentTask.TADAClass
         {
             SqlConnection conn = new SqlConnection(myconnection);
             DataTable dt = new DataTable();
-
+            
             try
             {
-                string sql = "SELECT * from TadaEntry";
+                string sql = "SELECT * from DataEntry";
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
                 conn.Open();
@@ -52,7 +52,8 @@ namespace RecruitmentTask.TADAClass
 
             try
             {
-                string sql = "INSERT INTO TadaEntry(Date,Name,TravelCost,LunchCost,InstrumentCost,Paid) values(@Date,@Name,@TravelCost,@LunchCost,@InstrumentCost,@Paid)";
+                
+                string sql = "INSERT INTO DataEntry(Date,Name,TravelCost,LunchCost,InstrumentCost,Paid) values(@Date,@Name,@TravelCost,@LunchCost,@InstrumentCost,@Paid)";
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 
 
@@ -72,6 +73,7 @@ namespace RecruitmentTask.TADAClass
                 else
                 {
                     isSuccess = false;
+                   
                 }
 
 

@@ -30,10 +30,24 @@ namespace RecruitmentTask
         {
             c.Date = datetexbox.Text;
             c.EmployeeName = ENametextBox.Text;
-            //c.TravelCost = TCtextBox.ToString;
-            //c.LunchCost = LCtextBox.Text;
-            //c.InstrumentCost = ICtextBox.Text; 
+            c.TravelCost = TCtextBox.Text;
+            c.LunchCost = LCtextBox.Text;
+            c.InstrumentCost = ICtextBox.Text;
+            c.Paid = PaidcomboBox.ToString();
 
+
+            //insert value in databasehh
+
+            bool success = c.Insert(c);
+            
+            if (success == true )
+            {
+                MessageBox.Show("Data Enter Successfully");
+            }
+            else
+            {
+                MessageBox.Show("Data Entry Faild!! Try Again");
+            }
         }
     }
 }
